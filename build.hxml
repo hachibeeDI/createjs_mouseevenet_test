@@ -1,0 +1,14 @@
+-lib createjs
+-cp src
+-js static/js/main.js
+-main Main
+-debug
+
+#--next
+#
+#-cp src
+#-cp test
+#-main MyTest
+#-neko mytest.n
+#
+#-cmd neko mytest.n
