@@ -50,6 +50,27 @@ class Main
         }
         this.stage.addChild(b_shape);
         b_shape.x = b_shape.y = 200;
+
+
+        var rect = new Shape();
+        rect.graphics.beginFill("#FF0000")
+            .drawRect(0, 0, 9, 9)
+            .endFill();
+        rect.onClick = function(e: MouseEvent) {
+            rect.scaleX = 3;
+            rect.scaleY = 3;
+        }
+        this.stage.addChild(rect);
+
+        var rect2 = new Shape();
+        rect2.graphics.beginFill("#FF0000")
+            .drawRect(0, 10, 9, 9)
+            .endFill();
+        rect2.onClick = function(e: MouseEvent) {
+            rect2.scaleX = 3;
+            rect2.scaleY = 3;
+        }
+        this.stage.addChild(rect2);
     }
 
     private function tickHandler(): Void
