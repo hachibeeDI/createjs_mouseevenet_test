@@ -33,6 +33,20 @@ Main.prototype = {
 		};
 		this.stage.addChild(b_shape);
 		b_shape.x = b_shape.y = 200;
+		var rect = new createjs.Shape();
+		rect.graphics.beginFill("#FF0000").drawRect(0,0,9,9).endFill();
+		rect.onClick = function(e) {
+			rect.scaleX = 3;
+			rect.scaleY = 3;
+		};
+		this.stage.addChild(rect);
+		var rect2 = new createjs.Shape();
+		rect2.graphics.beginFill("#FF0000").drawRect(0,10,9,9).endFill();
+		rect2.onClick = function(e) {
+			rect2.scaleX = 3;
+			rect2.scaleY = 3;
+		};
+		this.stage.addChild(rect2);
 	}
 }
 var Std = function() { }
